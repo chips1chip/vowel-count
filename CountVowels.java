@@ -1,16 +1,14 @@
 public class CountVowels {
     public static void main(String[] args) {
-        int count = 0;
-        String str="My name is Anjali";
-        str = str.toLowerCase(); 
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (ch == 'a' || ch == 'e'|| ch == 'i' || ch == 'o' || ch == 'u') {
-             
-                 
-                count++;
+        int vowelCount = 0; // To count vowels
+        String sentence = "My name is Anjali"; // Input string
+        sentence = sentence.toLowerCase(); // Convert to lowercase for easy comparison
+        for (int idx = 0; idx < sentence.length(); idx++) {
+            char currentChar = sentence.charAt(idx); // Get character
+            if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u') {
+                vowelCount++; // Increment if vowel
             }
         }
-        System.out.println("THE NO. OF VOWELS:"+count);
+        System.out.println("THE NO. OF VOWELS: " + vowelCount); // Display the result
     }
 }
